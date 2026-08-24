@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+#select-screen {
+  text-align: center;
+  color: black;
+  background-color: white;
+  width: 500px;
+  margin: 100px auto;
+  border: 5px white solid;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.button {
+  font-size: 20px;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 3px 20px;
+  border-radius: 8px;
+  margin: 0 10px;
+  -webkit-transition: background-color .2s, color .2s;
+  transition: background-color .2s, color .2s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#result {
+  display: none;
+  font-size: 40px;
+  text-align: center;
+  margin: 50px auto;
+  width: 500px;
+}
+
+#game-board {
+  text-align: center;
+  display: none;
+  background-color: white;
+  width: 426.5px;
+  height: 426.5px;
+  margin: 50px auto;
+}
+
+.cell {
+  font-size: 40px;
+  display: inline-block;
+  background-color: black;
+  height: 140px;
+  line-height: 100px;
+  width: 139px;
+  vertical-align: top;
+}
+
+.cell:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.taken:hover {
+  cursor: not-allowed;
+}
+
+.row {
+  margin-bottom: 4px;
+}
+
+#game-over-overlay {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+}
